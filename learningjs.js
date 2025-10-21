@@ -30,28 +30,51 @@ console.log(valuevalue)
 
 // 4
 console.log("--------#4---------");
-let y = Math.floor(Math.random() * 5);
+let y = Math.floor(Math.random() * 90);
 let value = volume_of_sphere(y);
 console.log(value)
 
 //5 
 console.log("--------#5---------");
 const colors = ["red", "orange", "yellow", "blue", "green", "purple", "pink", "black", "white", "cyan", "grey", "navy blue", "beige", "ultramarine", "brown"];
-let size = colors.length    
-let first_element = colors[0];
-let last_element = colors[colors.length - 1];
-let random_element = random.colors[]
-let sort = colors.sort()
-
+let size = colors.length  
 console.log(size)
+
+let first_element = colors[0];
 console.log(first_element)
+
+let last_element = colors[colors.length - 1];
 console.log(last_element)
-console.log(random_element)
+
+const randomIndex=Math.floor(Math.random()* colors.length);
+const randomElement=colors[randomIndex];
+console.log(randomElement)
+
+let sort = colors.sort()
 console.log(sort)
-colors.push("light green");
+
+colors.push("bright purple");
+console.log(colors)
+
+colors.push(6767);
+console.log(colors)
 
 
 //6
 console.log("--------#6---------");
+
+function randomElementsarray(min , max, count){
+    const randomElements_=[];
+for (let i =0; i<count; i++) {
+    let randomElements=Math.floor(Math.random()* (max-min+1)) + min;
+    randomElements_.push(randomElements);
+}
+return randomElements_;
+}
+const Elementsarray = randomElementsarray(29, 87, 10);
+console.log(Elementsarray)
+
+
+
 
 
