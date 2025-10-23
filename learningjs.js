@@ -72,7 +72,25 @@ for (let i =0; i<count; i++) {
 return randomElements_;
 }
 const Elementsarray = randomElementsarray(29, 87, 10);
+
+let distance_1=0;
+let el1=0;
+let el2=0;
+
+for (let i=0;i<Elementsarray.length -1;i++){
+    const a = Elementsarray[i];
+    const b = Elementsarray[i+1];
+    const distance_2 =Math.abs(a-b);
+
+    if (distance_2>distance_1){
+        distance_1=distance_2;
+        el1=a;
+        el2=b;
+    }
+}
 console.log(Elementsarray)
+console.log(distance_1)
+console.log(el1, el2)
 
 
 
