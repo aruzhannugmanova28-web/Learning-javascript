@@ -77,7 +77,7 @@ let distance_1=0;
 let el1=0;
 let el2=0;
 
-for (let i=0;i<Elementsarray.length -1;i++){
+for (let i=0;i<Elementsarray.length - 1;i++){
     const a = Elementsarray[i];
     const b = Elementsarray[i+1];
     const distance_2 =Math.abs(a-b);
@@ -91,6 +91,21 @@ for (let i=0;i<Elementsarray.length -1;i++){
 console.log(Elementsarray)
 console.log(distance_1)
 console.log(el1, el2)
+
+//7
+console.log("--------#7---------");
+const newElementsarray=Elementsarray.map(Math.sqrt) //square root
+const newnewElementsarray=Elementsarray.map(number => number * number) //squared
+
+console.log(newElementsarray)
+console.log(newnewElementsarray)
+
+//8
+console.log("--------#8---------");
+let max_number = Math.max(newnewElementsarray);
+console.log(max_number);
+const lar_min_array=newnewElementsarray.map(Math.max);
+
 
 
 
