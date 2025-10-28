@@ -102,11 +102,56 @@ console.log(newnewElementsarray)
 
 //8
 console.log("--------#8---------");
-let max_number = Math.max(newnewElementsarray);
+const new_max_number_array = newnewElementsarray
+const max_number = Math.max(...new_max_number_array);
 console.log(max_number);
-const lar_min_array=newnewElementsarray.map(Math.max);
+const result = new_max_number_array.filter(checknumbers);
+function checknumbers(object) {
+  return object >= max_number / 2;
+}
+console.log(result)
+
+//9
+console.log("--------#9---------");
+const array_9 = result.reduce(getSum, 0);
+function getSum(total, num) {
+    return total + Math.round(num);
+}
+console.log(array_9)
+
+//10
+console.log("--------#10---------");
+const array_10 = result;
+array_10.forEach((numbernumber, index) => {
+  console.log(`${index + 1}. ${numbernumber}`);
+});
+
+//11
+console.log("--------#11---------");
+class Car {
+constructor(brand, car_number, car_country) {
+    this.carname = brand;
+    this.carnumber = car_number;
+    this.carcountrycode = car_country;
+  }
+  printDetails() {
+    console.log(`Car brand: ${this.carname}`);
+    console.log(`Car number: ${this.carnumber}`);
+    console.log(`Car country: ${this.carcountrycode}`);
+  }
+}
+const myCar = new Car("Ford", 785, "US");
+myCar.printDetails();
 
 
+//12
+console.log("--------#12---------");
+const array_12 = 
+conlose.log(array_12.filter())
+const new_array_12 = array_12.map()
+new_array_12.forEach((number_12, index) => {
+  console.log(`${index + 1}. ${number_12}`);
+});
 
 
 
