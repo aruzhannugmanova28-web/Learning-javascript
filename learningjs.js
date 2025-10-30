@@ -146,13 +146,29 @@ myCar.printDetails();
 
 //12
 console.log("--------#12---------");
-const array_12 = 
-conlose.log(array_12.filter())
-const new_array_12 = array_12.map()
-new_array_12.forEach((number_12, index) => {
-  console.log(`${index + 1}. ${number_12}`);
-});
+console.log("--------#12 array ---------");
 
+const cararray =[
+  new Car("Ferrari", 731, "KZ"),
+  new Car("Toyota", 732, "CA"),
+  new Car("Honda", 733, "AU"),
+  new Car("Nissan", 734, "NZ"),
+  new Car("Kia", 735, "EU"),
+  new Car("Chevrolet", 736, "SW"),
+  new Car("Jeep", 737, "NK"),
+  new Car("Volkswagen", 738, "SK"),
+  new Car("Audi", 739, "UK"),
+  new Car("BMW", 740, "RU"),
+];
 
+cararray.forEach(car => car.printDetails());
+
+console.log("--------#12 strings---------");
+const carStrings = cararray.filter(car => car.carcountrycode === "KZ");
+carStrings.forEach(car => car.printDetails());
+
+console.log("--------#12 numbers---------");
+const carNumbers = cararray.map(car => car.carnumber);
+console.log(carNumbers);
 
 
