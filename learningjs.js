@@ -149,26 +149,43 @@ console.log("--------#12---------");
 console.log("--------#12 array ---------");
 
 const cararray =[
-  new Car("Ferrari", 731, "KZ"),
+  new Car("Ferrari", 751, "KZ"),
   new Car("Toyota", 732, "CA"),
-  new Car("Honda", 733, "AU"),
-  new Car("Nissan", 734, "NZ"),
-  new Car("Kia", 735, "EU"),
+  new Car("Honda", 793, "AU"),
+  new Car("Nissan", 794, "NZ"),
+  new Car("Kia", 635, "EU"),
   new Car("Chevrolet", 736, "SW"),
-  new Car("Jeep", 737, "NK"),
+  new Car("Jeep", 937, "NK"),
   new Car("Volkswagen", 738, "SK"),
   new Car("Audi", 739, "UK"),
-  new Car("BMW", 740, "RU"),
+  new Car("BMW", 780, "RU"),
 ];
 
 cararray.forEach(car => car.printDetails());
 
 console.log("--------#12 strings---------");
-const carStrings = cararray.filter(car => car.carcountrycode === "KZ");
-carStrings.forEach(car => car.printDetails());
+const car_strings = cararray.filter(car => car.carcountrycode === "KZ");
+car_strings.forEach(car => car.printDetails());
 
 console.log("--------#12 numbers---------");
 const carNumbers = cararray.map(car => car.carnumber);
 console.log(carNumbers);
+
+console.log("--------#12 change values---------");
+cararray.forEach(car =>{
+  if (car.carcountrycode === "RU") {
+    car.carname = `Tesla`;
+  }
+});
+cararray.forEach(car => car.printDetails());
+
+console.log("--------#12  sort---------");
+let sort_cars = cararray.sort(function(a, b){return a.carnumber - b.carnumber});
+sort_cars.forEach(car => car.printDetails());
+
+
+
+
+
 
 
